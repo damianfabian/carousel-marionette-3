@@ -14,6 +14,11 @@
     margin: 0 15px;
     min-height: 150px;
     overflow: hidden;
+    position: relative;
+}
+
+.block-box:first-child {
+    left: 0px;
 }
 
 .block-box {
@@ -37,6 +42,9 @@
 
 .block-box img {
     width: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .controls {

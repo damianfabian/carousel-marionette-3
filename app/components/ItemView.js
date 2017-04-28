@@ -54,7 +54,7 @@ const render = function (opts) {
         onAttach () {
             const page = _options.CUR_PAGE 
             if(page > 1 && page <= TOTAL_PAGES) {
-                this.changeBlocks(false, (page - 1) * 100)
+                this.changeBlocks(false, (page - 1))
                 this.enableButton('prev')
             }
         },
@@ -99,10 +99,17 @@ const render = function (opts) {
             } 
         },
 
-        changeBlocks (left, pos = 100) {
+        changeBlocks (left, pos = 1) {
+            /**
+            * Fix for Safari, in Safari the unit % does not work well
+            * with the left, cause this I get the size we need to move
+            * from the client elements 
+            */
             const rest = left ? '+' : '-'
+            const size = $('.block-box.active')[0].clientWidth * _options.PAGINATION
+            const move = size * pos
             $('.block-box.active').animate({
-                left: `${rest}=${pos}vw`
+                left: `${rest}=${move}px`
             }, _options.DELAY)
         }
     })  

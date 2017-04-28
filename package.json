@@ -1,11 +1,11 @@
 {
-  "name": "your-app",
-  "description": "Description",
-  "author": "Your Name",
+  "name": "carousel-marionette-3",
+  "description": "Carousel Implemented with Marionette 3 and Backbone using Webpack 2",
+  "author": "Fabian Jaramillo",
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/damianfabian/carousel-marionette-3"
   },
   "scripts": {
     "start": "webpack-dev-server --open",

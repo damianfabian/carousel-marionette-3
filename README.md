@@ -2,7 +2,7 @@
 
 Carousel implemented with the latest modern JS skeleton with MarionetteJS for [Webpack 2](https://webpack.js.org/).
 
-## Web Browser Supportted
+## Web Browser Supported
 
 THe Carousel was tested with these Browsers:
 
