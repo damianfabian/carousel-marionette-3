@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, system, sans-serif;
+}
+
+#app {
+    margin: 30px;
+}
+
+.carousel-container {
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    display: -webkit-box;
+    margin: 0 15px;
+    min-height: 150px;
+    overflow: hidden;
+}
+
+.block-box {
+    margin: 0;
+    padding: 0 !important;
+    min-height: 100%;
+    position: relative;
+}
+
+.block-box h1 {
+    position: absolute;
+    font-size: 20px;
+    color: #ffffff;
+    background: rgba(0,0,0,.5);
+    width: calc(100%);
+    bottom: 0px;
+    padding: 5px;
+    text-align: center;
+    margin: 0px;
+}
+
+.block-box img {
+    width: 100%;
+}
+
+.controls {
+    margin: auto;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    margin: 15px 0;
+}
+
+a {
+  color: #006a86;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+a:hover {
+  color: #006a86;
+  border-bottom: 1px solid #006a86;
+}
+
+a.disabled {
+    color: gray;
+    cursor: not-allowed;
+    
+}
